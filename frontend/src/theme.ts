@@ -1,6 +1,6 @@
 export const colors = {
-  offWhite: '#fdfbf8',
+  offWhite: '#F7F2E4',
   nearBlack: '#1e1b18',
-  brandBrown: '#9b6c3e',
+  brandBrown: '#5D3A20',
   accentTeal: '#50b9a7',
 };

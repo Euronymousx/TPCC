@@ -1,18 +1,39 @@
-import { Button } from './ui/Button'
 import { motion } from 'framer-motion'
-const heroBg = 'linear-gradient(120deg, #9b6c3e 0%, #50b9a7 100%)'
+import { useNavigate } from 'react-router-dom'
+import { Button } from './ui/Button'
 
 export function Hero() {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-  }
+  const navigate = useNavigate()
   return (
-    <section className="relative h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: heroBg }}>
-      <div className="absolute inset-0 bg-nearBlack/60 backdrop-blur-sm" />
-      <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="relative z-10 text-center text-offWhite space-y-6">
-        <h1 className="text-4xl md:text-6xl font-display">Premium Care for Your Beloved Pets</h1>
-        <p className="max-w-xl mx-auto font-sans">Experience bespoke concierge services designed to pamper your furry family members.</p>
-        <Button onClick={scrollToContact} className="animation-pulse">Book a Consultation</Button>
+    <section className="relative h-screen flex flex-col items-center justify-center bg-offWhite text-nearBlack">
+      <motion.img
+        src="/img/logo-walker.png"
+        alt="TPCC logo"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="w-40 md:w-60 mb-8"
+      />
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="text-center text-4xl md:text-6xl font-display"
+      >
+        Luxury Dog-Walking &amp; Pet Care, Reimagined.
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+        className="mt-4 text-center max-w-xl"
+      >
+        Daily walks, safety-first practices, concierge-level service.
+      </motion.p>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }} className="mt-8 flex gap-4">
+        <Button onClick={() => navigate('/apply')}>Apply Online</Button>
+        <Button variant="secondary" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
+          See Pricing
+        </Button>
       </motion.div>
     </section>
   )

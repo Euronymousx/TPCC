@@ -1,0 +1,277 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LandingPage > renders logo and CTA 1`] = `
+<div>
+  <div>
+    <section
+      class="relative h-screen flex flex-col items-center justify-center bg-offWhite text-nearBlack"
+    >
+      <img
+        alt="TPCC logo"
+        class="w-40 md:w-60 mb-8"
+        src="/img/logo-walker.png"
+        style="opacity: 0; transform: translateY(-20px);"
+      />
+      <h1
+        class="text-center text-4xl md:text-6xl font-display"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        Luxury Dog-Walking & Pet Care, Reimagined.
+      </h1>
+      <p
+        class="mt-4 text-center max-w-xl"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        Daily walks, safety-first practices, concierge-level service.
+      </p>
+      <div
+        class="mt-8 flex gap-4"
+        style="opacity: 0;"
+      >
+        <button
+          class="transition-transform shadow-xl rounded-card px-5 py-3 font-semibold focus:outline-none bg-brandBrown text-offWhite hover:-translate-y-1"
+        >
+          Apply Online
+        </button>
+        <button
+          class="transition-transform shadow-xl rounded-card px-5 py-3 font-semibold focus:outline-none bg-accentTeal text-nearBlack hover:-translate-y-1"
+        >
+          See Pricing
+        </button>
+      </div>
+    </section>
+    <ul
+      class="bg-offWhite py-8 flex flex-wrap justify-center gap-4 text-sm"
+      style="opacity: 0;"
+    >
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        Background-checked
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        High-vis gear
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        Belt-attached leashes
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        CPR certified
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        Insured & bonded
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        Crash-tested transport
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        Body-cams
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        Two-walker teams
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        GPS trackers
+      </li>
+      <li
+        class="px-3 py-1 bg-brandBrown text-offWhite rounded-full shadow"
+      >
+        Heated winter jackets
+      </li>
+    </ul>
+    <section
+      class="container mx-auto py-16 space-y-10"
+      id="pricing"
+    >
+      <h2
+        class="text-3xl font-display text-center text-brandBrown"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        Subscription Pricing
+      </h2>
+      <div
+        class="grid md:grid-cols-2 gap-8"
+      >
+        <div
+          class="bg-offWhite shadow-xl rounded-card p-6 text-center space-y-4"
+        >
+          <h3
+            class="text-2xl font-display text-brandBrown"
+          >
+            Base Subscription
+          </h3>
+          <p
+            class="text-4xl font-display"
+          >
+            $
+            750
+             
+            <span
+              class="text-lg font-sans"
+            >
+              / month
+            </span>
+          </p>
+          <p>
+            1 daily walk • 5 drop-ins • eligible for add-ons
+          </p>
+        </div>
+        <div
+          class="bg-offWhite shadow-xl rounded-card p-6 space-y-4"
+        >
+          <h4
+            class="font-display text-xl text-brandBrown"
+          >
+            Add-ons
+          </h4>
+          <label
+            class="flex items-center gap-2"
+          >
+            <input
+              type="checkbox"
+            />
+            Another dog +30% ($
+            225.00
+            )
+          </label>
+          <label
+            class="flex items-center gap-2"
+          >
+            <input
+              type="checkbox"
+            />
+            2nd walk / day +75% ($
+            562.50
+            )
+          </label>
+          <p
+            class="font-semibold"
+          >
+            Total: $
+            750.00
+          </p>
+          <div>
+            <p>
+              Extra drop-ins $60 ea | 5-pack $275 | 10-pack $500
+            </p>
+            <p>
+              Weekly bath $40 / visit | Bi-weekly $55
+            </p>
+            <p>
+              Grooming scheduling (price TBD, 
+              <a
+                class="underline"
+                href="#"
+              >
+                Ask us
+              </a>
+              )
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-offWhite shadow-xl rounded-card p-6 space-y-4 max-w-md mx-auto"
+      >
+        <h4
+          class="font-display text-xl text-brandBrown"
+        >
+          Pet-Taxi Calculator
+        </h4>
+        <div
+          class="space-y-2"
+        >
+          <label
+            class="block text-sm"
+          >
+            Miles:
+            <input
+              class="border px-2 py-1 ml-2 w-20"
+              type="number"
+              value="0"
+            />
+          </label>
+          <label
+            class="block text-sm"
+          >
+            Waiting hours:
+            <input
+              class="border px-2 py-1 ml-2 w-20"
+              type="number"
+              value="0"
+            />
+          </label>
+          <p
+            class="font-semibold"
+          >
+            $
+            40.00
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container mx-auto py-16 grid md:grid-cols-3 gap-8"
+    >
+      <figure
+        class="shadow-2xl rounded-3xl overflow-hidden"
+      >
+        <img
+          alt="Happy dog on walk"
+          class="w-full"
+          src="https://via.placeholder.com/600x400"
+        />
+        <figcaption
+          class="p-2 text-center text-sm"
+        >
+          Happy dog on walk
+        </figcaption>
+      </figure>
+      <figure
+        class="shadow-2xl rounded-3xl overflow-hidden"
+      >
+        <img
+          alt="Two walkers in high-vis gear"
+          class="w-full"
+          src="https://via.placeholder.com/600x400"
+        />
+        <figcaption
+          class="p-2 text-center text-sm"
+        >
+          Two walkers in high-vis gear
+        </figcaption>
+      </figure>
+      <figure
+        class="shadow-2xl rounded-3xl overflow-hidden"
+      >
+        <img
+          alt="Crash-tested kennel in van"
+          class="w-full"
+          src="https://via.placeholder.com/600x400"
+        />
+        <figcaption
+          class="p-2 text-center text-sm"
+        >
+          Crash-tested kennel in van
+        </figcaption>
+      </figure>
+    </section>
+  </div>
+</div>
+`;
